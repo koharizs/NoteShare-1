@@ -15,7 +15,7 @@ const appRoutes: Routes = [
   { path: 'home', component: HomePageComponent },
   { path: 'login', component: LoginPageComponent },
   { path: 'user/:index', component: UserPageComponent },
-  { path: 'subject/:name', component: SubjectPageComponent },
+  { path: 'subject', component: SubjectPageComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
   
 ]

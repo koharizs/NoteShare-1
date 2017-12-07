@@ -9,19 +9,19 @@ import { HttpClient } from "@angular/common/http";
 })
 export class SubjectPageComponent implements OnInit {
 
-   subject: { name: string; }
+  // subject: { name: string; }
   
   constructor(
-    private route: ActivatedRoute,
-    private http: HttpClient
+   // private route: ActivatedRoute,
+  //  private http: HttpClient
   ) { }
 
   ngOnInit() {
-    this.route.paramMap.subscribe(m => {
-      this.http
-        .get("http://localhost:8080/api/subject/" + m.get("name"))
-        .subscribe(r => this.subject = r['data'])
-    })
+  //  this.route.paramMap.subscribe(m => {
+    //  this.http
+    //    .get("http://localhost:8080/api/subject/" + m.get("name"))
+      //  .subscribe(r => this.subject = r['data'])
+    //})
   }
 
 }
